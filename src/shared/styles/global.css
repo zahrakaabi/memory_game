@@ -6,6 +6,16 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow: hidden;
+    background: radial-gradient(circle, rgba(250,210,228,1) 0%, rgba(206,228,254,1) 100%);
+}
+
+.App {
+    width: 100%;
+    min-height: 100vh;
+}
+
 .flex {
     display: flex;
 }
@@ -14,7 +24,7 @@
     flex-direction: column;
 }
 
-.jusify-center {
+.justify-center {
     justify-content: center;
 }
 

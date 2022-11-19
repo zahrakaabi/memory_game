@@ -2,11 +2,11 @@
 /*                DEPENDENCIES               */
 /* ----------------------------------------- */
 // Images
-import PIKATCHU from '../../../assets/images/pikatchu.jpeg';
-import BLUE_TORTUE from '../../../assets/images/blue_tortue.jpeg';
+import PIKATCHU from '../../../assets/images/pikatchu.jpg';
+import BLUE_TORTUE from '../../../assets/images/blue_tortue.jpg';
 import BULBASAUR from '../../../assets/images/bulbasaur.png'; 
-import CHIBI_DEX from '../../../assets/images/chibiDex.jpeg';  
-import SNORLAX from '../../../assets/images/snorlax.jpeg';   
+import CHIBI_DEX from '../../../assets/images/chibiDex.jpg';  
+import SNORLAX from '../../../assets/images/snorlax.jpg';   
 import OTAKUKAN from '../../../assets/images/otakukan.png'; 
 
 /* ----------------------------------------- */

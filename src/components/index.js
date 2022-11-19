@@ -1,0 +1,1 @@
+export { default as MemoryGameBox } from '../components/memory-game-box';

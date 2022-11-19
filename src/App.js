@@ -3,6 +3,9 @@
 /* ---------------------------------------- */
 // Packages
 
+// UI Local Components
+import { MemoryGameBox } from './components';
+
 // Styles
 import './shared/styles/global.css';
 
@@ -12,8 +15,8 @@ import './shared/styles/global.css';
 function App() {
   /* ************** RENDERING ************* */
   return (
-    <div className="App">
-      hello
+    <div className="App flex justify-center items-center">
+      <MemoryGameBox />
     </div>
   );
 }

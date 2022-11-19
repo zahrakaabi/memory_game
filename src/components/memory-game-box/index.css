@@ -1,0 +1,57 @@
+:root {
+    --pokemon-box-width: 100px;
+    --pokemon-number-per-column: 4;
+    --gap: 5px;
+    --pokemon-number-per-row: 3;
+}
+
+.memory-game-box {
+    display: grid;
+    gap: var(--gap);
+    width: fit-content;
+    background: #dadff7;
+    padding: 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    grid-template-columns: repeat(var(--pokemon-number-per-column), 1fr);
+    grid-template-rows: repeat(var(--pokemon-number-per-row), 1fr);
+    perspective: 600px;
+}
+
+.pokemon-box {
+    position: relative;
+    width: var(--pokemon-box-width);
+    height: 100px;
+    padding: 5px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    transform-origin: right center;
+}
+
+.pokemon-box:hover {
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+.pokemon {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.pokemon-box_front {
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+}
+
+.pokemon-box_back {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-color: #fff;
+    transform: rotateY(180deg) translateX(10px);
+}
+
+.pokemon-box_back img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
