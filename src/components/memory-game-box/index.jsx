@@ -15,7 +15,8 @@ import './index.css';
 /* ----------------------------------- */
 function MemoryGameBox() {
     // STATES
-    const [items, setItems] = useState([...POKEMON_API].sort(() => Math.random() - 0.5));
+    const SHUFFLED_POKEMON_API = [...POKEMON_API].sort(() => Math.random() - 0.5);
+    const [items, setItems] = useState(SHUFFLED_POKEMON_API);
     const [previous, setPrevious] = useState(-1);
 
     // STATUS OF THE CARDS

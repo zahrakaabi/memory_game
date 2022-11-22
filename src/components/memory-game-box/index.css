@@ -80,3 +80,27 @@
     border: 5px solid #000;
     border-radius: 50%;
 }
+
+
+@media (max-width: 992px) {
+    .memory-game-box {
+        width: 100%;
+    }
+
+    .pokemon-box {
+        width: 100%;
+    }
+
+    .restart-game {
+        left: 60%;
+        font-size: 1.5rem;
+        transform: translateX(-60%);
+    }
+
+    .restart-game::before {
+        left: -2.5rem;
+        bottom: 0;
+        width: 30px;
+        height: 30px;
+    }
+}
